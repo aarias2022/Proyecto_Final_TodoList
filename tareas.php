@@ -49,14 +49,14 @@ if(!isset($_SESSION['valid'])) {
                 </div>
             </a>
 
-            <a href="#">
+            <a href="cambiarcontraseña.php">
                 <div class="option">
                     <i class="far fa-address-card" title="Cambiar Contraseña"></i>
                     <h4>Cambiar Contraseña</h4>
                 </div>
             </a>
             
-            <a href="#">
+            <a href="cerrarsesion.php">
                 <div class="option">
                     <i class="far fa-id-badge" title="Cerrar"></i>
                     <h4>Cerrar Sesion</h4>
