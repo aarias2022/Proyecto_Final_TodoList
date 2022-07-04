@@ -11,6 +11,7 @@ if(!isset($_SESSION['valid'])) {
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <h1  class="text-center py-4 my-4">Hola, <b><?php echo htmlspecialchars($_SESSION["valid"]); ?></b> Bienvenid@ a tu lista de Tareas</h1>
      
     <title>Lista de Tareas</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -49,14 +50,14 @@ if(!isset($_SESSION['valid'])) {
                 </div>
             </a>
 
-            <a href="#">
+            <a href="cambiarcontraseña.php">
                 <div class="option">
                     <i class="far fa-address-card" title="Cambiar Contraseña"></i>
                     <h4>Cambiar Contraseña</h4>
                 </div>
             </a>
             
-            <a href="#">
+            <a href="cerrarsesion.php">
                 <div class="option">
                     <i class="far fa-id-badge" title="Cerrar"></i>
                     <h4>Cerrar Sesion</h4>
@@ -91,6 +92,7 @@ if(!isset($_SESSION['valid'])) {
     <tr>
       <th scope="col" name="ID_Tarea">Nro Tarea</th>
       <th scope="col">Lista de tareas</th>
+      <th scope="col">Prioridad</th>
       <th scope="col">Fecha de creacion</th>
       <th scope="col">Fecha de entrega</th>
     <th>Action</th>
@@ -114,6 +116,13 @@ if(!isset($_SESSION['valid'])) {
                 <tr>
                 <td><?php echo $ID_tarea ?></td>
                 <td><?php echo $tarea ?></td>
+                <td>
+                <select id="prioridad" name="prioridad" class=" btn btn-primary btn-sm dropdown-toggle" onchange="ShowSelected();">            
+              <option value="value1">Alto</option>
+              <option value="value2" selected>Normal</option>
+              <option value="value3">Bajo</option>
+              </select>
+                </td>
                 <td><?php echo $fecha ?></td>
                 <td><?php echo $fechaF ?></td>
                 <td>

@@ -29,6 +29,9 @@
         <label for="title">Tarea</label>
         <input class="form-control" type="text" name="tarea" id="tarea" value="<?php global $tarea; echo $tarea ?>" placeholder="Editar tarea"
           Required>
+
+        <label for="title">Ingrese fecha</label>
+            <input class="form-control"  type="date" name="fecha" id="fecha" Required>
           <input type="hidden" name="ID_tarea" id="ID_tarea" value="<?php echo $ID_tarea ?>">
       </div><br>
       <button class="btn btn-success">Guardar Edicion</button>
