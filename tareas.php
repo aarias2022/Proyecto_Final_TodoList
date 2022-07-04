@@ -42,7 +42,7 @@ if(!isset($_SESSION['valid'])) {
                 </div>
             </a>
 
-            <a href="#">
+            <a href="buscar.php">
                 <div class="option">
                     <i class="fa fa-search" title="Buscar"></i>
                     <h4>Buscar</h4>
@@ -119,6 +119,14 @@ if(!isset($_SESSION['valid'])) {
                 <td>
                 <a href = "eliminar.php?ID_tarea=<?php echo $ID_tarea ?>" class="btn btn-danger btn-sm">Eliminar</a>
                 <a href = "editartarea.php?ID_tarea=<?php echo $ID_tarea ?>" class=" btn btn-warning btn-sm">Editar</a>
+                <button type="button" class=" btn btn-primary btn-sm dropdown-toggle" id="darkButton"
+                data-bs-toggle="dropdown" aria-expanded="fase">Estado
+                </button>
+                <ul class ="dropdown-menu dropdown-menu-dark">
+                    <li><a href = "#" class="dropdown-item">Inicio</a></li>
+                    <li><a href = "#" class="dropdown-item">En Proceso</a></li>
+                    <li><a href = "#" class="dropdown-item">Finalizo</a></li>                           
+                </ul>
                 </tr>
                 </tr>
                 <?php
@@ -133,5 +141,6 @@ if(!isset($_SESSION['valid'])) {
     </div>
     </main>
     <script src="js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
