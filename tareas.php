@@ -92,6 +92,7 @@ if(!isset($_SESSION['valid'])) {
     <tr>
       <th scope="col" name="ID_Tarea">Nro Tarea</th>
       <th scope="col">Lista de tareas</th>
+      <th scope="col">Prioridad</th>
       <th scope="col">Fecha de creacion</th>
       <th scope="col">Fecha de entrega</th>
     <th>Action</th>
@@ -115,6 +116,13 @@ if(!isset($_SESSION['valid'])) {
                 <tr>
                 <td><?php echo $ID_tarea ?></td>
                 <td><?php echo $tarea ?></td>
+                <td>
+                <select id="prioridad" name="prioridad" class=" btn btn-primary btn-sm dropdown-toggle" onchange="ShowSelected();">            
+              <option value="value1">Alto</option>
+              <option value="value2" selected>Normal</option>
+              <option value="value3">Bajo</option>
+              </select>
+                </td>
                 <td><?php echo $fecha ?></td>
                 <td><?php echo $fechaF ?></td>
                 <td>
