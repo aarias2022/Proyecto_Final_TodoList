@@ -10,11 +10,15 @@ if(!isset($_SESSION['valid'])) {
 <html>
 <head>
 	<title>Change Password</title>
-	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 </head>
 <body>
+	
+<div class="container">
     <form action="actualizarcontra.php" method="post">
-     	<h2>Cambiar Contraseña</h2>
+	<h1 class="animate__animated animate__backInLeft">Cambiar Contraseña</h1>
 
 
      	<label>Contraseña Actual</label>
@@ -35,8 +39,12 @@ if(!isset($_SESSION['valid'])) {
      	       placeholder="confirmar contraseña">
      	       <br>
 
+			   <br>
+
      	<button class="btn btn-success">Actualizar Contraseña</button>
      </form>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
 
