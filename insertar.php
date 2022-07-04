@@ -12,10 +12,11 @@ include('bd.php');
 
     
 		$tarea=$_POST['tarea'];
+        $fechaF=$_POST['fecha'];
     $usuarios_id = $_SESSION['ID'];
 
 
-        $sql =  "INSERT INTO t_tarea (tarea, usuarios_id) VALUES('$tarea', '$usuarios_id')";
+        $sql =  "INSERT INTO t_tarea (tarea, fechaF, usuarios_id) VALUES('$tarea','$fechaF', '$usuarios_id')";
 
       $result=mysqli_query($conexion,$sql);
     if($result){
