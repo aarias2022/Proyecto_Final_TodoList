@@ -5,11 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="./Estilos2.css">
+	<link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
   <title>Modificar Tarea</title>
 </head>
 <body>
-  <h1 class="text-center py-4 my-4">Modificar Tarea</h1>
+<h1 class="animate__animated animate__backInLeft">Editar Tarea</h1>
   <?php
                 include 'bd.php';
                 $ID_tarea=$_GET['ID_tarea'];
@@ -23,7 +25,7 @@
 
                 }
             ?>
-  <div class="w-50 m-auto">
+  <div">
     <form action="editar.php" method="post" autocomplete="off">
       <div class="form-group">
         <label for="title">Tarea</label>

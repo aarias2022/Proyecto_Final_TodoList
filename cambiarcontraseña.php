@@ -12,6 +12,7 @@ if(!isset($_SESSION['valid'])) {
 	<title>Change Password</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/menu.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 </head>
 <body>
@@ -45,6 +46,8 @@ if(!isset($_SESSION['valid'])) {
      </form>
 </div>
 <script src="js/script.js"></script>
+<script src="js/menu.js"></script>
 </body>
+
 </html>
 
