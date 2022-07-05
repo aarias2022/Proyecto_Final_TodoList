@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Lobster', cursive;
+    
 }
 
 body{
@@ -15,6 +16,7 @@ body{
 
 main{
     padding: 20px;
+    
 }
 
 header{
@@ -146,7 +148,8 @@ a.selected{
 
 @media screen and (max-width: 760px){
     .body_move{
-        margin-left: 0px;
+        margin-left: 0px;       
+            
     }
 
     .menu__side_move{

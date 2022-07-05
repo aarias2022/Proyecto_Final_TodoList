@@ -36,7 +36,7 @@ if(!isset($_SESSION['valid'])) {
     
         <div class="options__menu">	
 
-            <a href="#" class="selected">
+            <a href="tareas.php" class="selected">
                 <div class="option">
                     <i class="fas fa-home" title="Inicio"></i>
                     <h4>Inicio</h4>
@@ -83,8 +83,8 @@ if(!isset($_SESSION['valid'])) {
     </form>
 
     </div><br>
-    <hr class="bg-dark w-50 m-auto">
-    <div class="lists w-50 m-auto my-4">
+    <hr class="bg-dark w-51 m-auto">
+    <div class="lists w-51 m-auto my-4">
         <h1>Tu lista de tareas</h1>
         <div id="lists">
         <table class="table table-dark table-hover">
@@ -96,6 +96,7 @@ if(!isset($_SESSION['valid'])) {
       <th scope="col">Fecha de creacion</th>
       <th scope="col">Fecha de entrega</th>
     <th>Action</th>
+    
     </tr>
   </thead>
   <tbody>
@@ -128,14 +129,11 @@ if(!isset($_SESSION['valid'])) {
                 <td>
                 <a href = "eliminar.php?ID_tarea=<?php echo $ID_tarea ?>" class="btn btn-danger btn-sm">Eliminar</a>
                 <a href = "editartarea.php?ID_tarea=<?php echo $ID_tarea ?>" class=" btn btn-warning btn-sm">Editar</a>
-                <button type="button" class=" btn btn-primary btn-sm dropdown-toggle" id="darkButton"
-                data-bs-toggle="dropdown" aria-expanded="fase">Estado
-                </button>
-                <ul class ="dropdown-menu dropdown-menu-dark">
-                    <li><a href = "#" class="dropdown-item">Inicio</a></li>
-                    <li><a href = "#" class="dropdown-item">En Proceso</a></li>
-                    <li><a href = "#" class="dropdown-item">Finalizo</a></li>                           
-                </ul>
+                <select id="estado" name="estado" class=" btn btn-primary btn-sm dropdown-toggle" onchange="ShowSelected();">            
+              <option value="value1">Inicio</option>
+              <option value="value2" selected>En Proceso</option>
+              <option value="value3">Finalizo</option>
+              </select>                
                 </tr>
                 </tr>
                 <?php
